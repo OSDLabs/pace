@@ -1,7 +1,7 @@
-pace
+(Supercharged) pace
 ====
 
-An automatic web page progress bar.
+An automatic web page progress bar, now with support for custom preloaders. Woohoo!
 
 Include [pace.js](https://raw.github.com/HubSpot/pace/v1.0.2/pace.min.js) and a [theme](http://github.hubspot.com/pace/docs/welcome/) of your choice to your page and you are done!
 
@@ -14,6 +14,16 @@ If you use AMD or Browserify, require pace.js and call `pace.start()` as early i
 ### [Demo](http://github.hubspot.com/pace/docs/welcome/)
 
 ### [Documentation](http://github.hubspot.com/pace/)
+
+An extra event can now be triggered: "change".
+
+You can bind onto events using the on method:
+
+```Pace.on(event, handler, [context])```: Call ```handler``` ( with context) when ```event``` is triggered
+
+The context here is the current loaded progress.
+
+
 
 ### Example
 
